@@ -57,8 +57,6 @@ func (m *AppleDnsResolverConfig) validate(all bool) error {
 
 	var errors []error
 
-	// no validation rules for IncludeUnroutableFamilies
-
 	if len(errors) > 0 {
 		return AppleDnsResolverConfigMultiError(errors)
 	}

@@ -3436,6 +3436,8 @@ func (m *Cluster_OriginalDstLbConfig) validate(all bool) error {
 
 	// no validation rules for HttpHeaderName
 
+	// no validation rules for UpstreamPortOverride
+
 	if len(errors) > 0 {
 		return Cluster_OriginalDstLbConfigMultiError(errors)
 	}
